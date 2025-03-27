@@ -28,7 +28,7 @@ jobs:
 
       - name: Start Flask App
         run: |
-          nohup python app.py &
+          nohup venv/bin/python app.py &
           sleep 5  # Wait a bit for the server to start
 
       - name: Run Selenium Tests
